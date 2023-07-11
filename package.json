@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack"
+  },
   "dependencies": {
     "@babel/cli": "^7.22.6",
     "@babel/core": "^7.22.6",
