@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/script.js",
+  entry: "./src/script.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.[contenthash].js",
@@ -23,7 +23,15 @@ module.exports = {
         test: /\.svg$/,
         type: "asset/resource",
       },
+      {
+        test: /\.(ts|tsx)$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
+      },
     ],
+  },
+  resolve: {
+    extensions: [".js", ".ts", ".tsx"],
   },
   plugins: [
     new HtmlWebpackPlugin({
