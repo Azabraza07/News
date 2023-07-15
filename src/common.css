@@ -2,10 +2,9 @@
 
 :root {
   --color-primary: #262A2F;
-  --color-accent: #FF5533;
+  --color-accent: #F53;
   --color-grey: #868686;
-  --color-white: #FFFFFF;
-
+  --color-white: #FFF;
   --container-width: 1440px;
   --grid-column-width: 98px;
   --grid-gap: 20px;
@@ -17,8 +16,8 @@
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
-  background-color: #FFFFFF;
+  font-family: Rubik, sans-serif;
+  background-color: #FFF;
   font-size: 22px;
   font-weight: 400;
   color: var(--color-primary);

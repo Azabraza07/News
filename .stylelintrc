@@ -1,0 +1,14 @@
+{
+  "extends": ["stylelint-config-standard", "prettier"],
+  "rules": {
+    "selector-class-pattern": "^([a-zA-Z0-9_-]+)$"
+  },
+  "overrides": [
+    {
+      "files": ["*.css"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}

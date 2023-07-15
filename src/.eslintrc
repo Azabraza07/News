@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "env": { "node": false, "browser": true },
+  "parserOptions": {},
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}
